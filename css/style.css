@@ -120,7 +120,7 @@ header{
 }
 
 .menu > li {
- background: #000;
+ background: #222327;
  float: left;
  position: relative;
  transform: skewX(25deg);
