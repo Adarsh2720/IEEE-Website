@@ -3,8 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Document</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/style.css')}}">
 
 	<link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 
@@ -15,20 +14,22 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
 
+
+	<title>{% block title %}{% endblock %}</title>
+
 </head>
 <body>
 
 
 	<div class="nav">
 		<header>
-			<a href="#" class="logo"><i class="ri-home-heart-fill"></i><span>Logo</span></a>
+			<a href="/" class="logo"><i class="ri-home-heart-fill"></i><span>Logo</span></a>
 	
 			<ul class="navbar">
-				<li><a href="#" class="active">Home</a></li>
-				<li><a href="#">About Us</a></li>
-				<li><a href="#">Services</a></li>
-				<li><a href="#">Blog</a></li>
-				<li><a href="#">Contact</a></li>
+				<li><a href="/">Home</a></li>
+				<li><a href="/about">About Us</a></li>
+				<li><a href="/team">Our Team</a></li>
+				<li><a href="/events">Events</a></li>
 			</ul>
 	
 			<div class="main">
@@ -37,10 +38,15 @@
 		</header>
 	</div>
 	<div>
-		<p>Adarsh</p>
+		<h1>Adarsh</h1>
+		<!-- <h1>Home</h1> -->
 	</div>
+
+	<div id="content">{% block content %}{% endblock %}</div>
+
+	
 	<!--js link--->
-	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="{{url_for('static', filename='js/script.js')}}"></script>
 
 </body>
 </html>
