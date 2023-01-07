@@ -15,9 +15,9 @@ def about():
     return render_template('about.html')
 
 
-@app.route("/team")
+@app.route("/council")
 def team():
-    return render_template('team.html')
+    return render_template('council.html')
 
 @app.route("/events")
 def events():

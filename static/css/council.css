@@ -1,0 +1,145 @@
+body {
+    /* background: linear-gradient(to right, #ffc837,#ff8008); */
+    /* background: linear-gradient(to right, #2c5364, #203a43, #0f2027); */
+    /* background: linear-gradient(to right, #e7760c, #b44d07, #965705); */
+    background: linear-gradient(to right,  rgba(255,209,67,1) 0%, rgba(255,145,83,1) 90%);
+
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.box {
+    width: 250px;
+    height: 250px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.288);
+    /* background: linear-gradient(to right,  rgb(255, 211, 81) 0%, rgb(252, 135, 68) 90%); */
+
+    background: linear-gradient(to right,#ffcc33,#ffb347 );
+    /* background-color: #000; */
+
+    border-radius: 23px;
+    flex-direction: column;
+    /* color: white; */
+    position: relative;
+    overflow: hidden;
+    margin: 20px 20px ;
+}
+
+.box img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+
+.user_name {
+    color: black;
+    margin-bottom: 5px;
+    font-size: 1rem;
+}
+
+.skill {
+ 
+    /* color: black; */
+    color:rgba(0, 0, 0, 0.678);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* arrow */
+.arr_container,
+.cancel {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: white;
+    bottom: 0;
+    right: 0;
+    border-radius: 23px 0 23px 0;
+    color: rgb(70, 70, 70);
+    font-size: 1.6rem;
+    cursor: pointer;
+    transition: all .4s;
+}
+
+.arr_container i {
+    transform: rotate(45deg);
+}
+
+.active_arr {
+    transform: translate(80%, 80%);
+}
+
+.left_container {
+    position: absolute;
+    background:black;
+    width: 100%;
+    height: 100%;
+    border-radius: 23px;
+    padding: 0 0 0 0;
+    transition: all .4s;
+}
+
+.off {
+    transform: translate(-80%, -80%) rotate(90deg);
+}
+
+.active {
+    transform: translate(0), rotate(0);
+}
+
+.left_container p {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+.left_container .skills div {
+    display: inline-block;
+    color: rgb(155, 155, 155);
+    border: 1px solid rgb(155, 155, 155);
+    padding: 5px 10px;
+    font-size: .9rem;
+    margin: 4px 4px 4px 0;
+}
+
+.left_container .icons {
+    font-size: 1.6rem;
+    margin-top: 10px;
+}
+
+.left_container .icons i {
+    color: #cfcfcf;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: all .4s;
+}
+
+.left_container .icons i:hover {
+    color: #2c5364;
+}
+
+.icons{
+    height: 91%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.faculty_name{
+    padding: 20px;
+}
+

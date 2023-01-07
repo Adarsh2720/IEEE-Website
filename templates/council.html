@@ -1,10 +1,839 @@
+{% extends "layout.html" %} {% block title %}Council | IEEE-VESIT{% endblock %}
+{% block css %}
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="{{url_for('static', filename='css/style.css')}}"
+/>
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="{{url_for('static', filename='css/council.css')}}"
+/>
 
-
-
-{% extends "layout.html" %}
-
-{% block title %}Council | IEEE-VESIT{% endblock %}
-
+{% endblock %}
 {% block content %}
-  <h1>Team</h1>
+<h1 align="center">Our Team</h1>
+    <div class="faculty_name">
+        <h1> <center>Faculty Incharges </center></h1>
+    </div>
+    <div class="main center">
+        <div class="box center">
+           <img src="{{url_for('static', filename='images/council_images/faculty/Gresha Bhatia.jpg')}}" alt="">
+            <div>
+                <p class="user_name">Gresha Bhatia</p>
+                <p class="skill">Faculty Incharge</p>
+            </div>
+            <div class="arr_container center">
+                <i class="fas fa-arrow-right"></i>
+            </div>
+            <div class="left_container off">
+                <div class="icons">
+                    <i class="fab fa-github"></i>
+                    <i class="fab fa-linkedin"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-facebook"></i>
+                </div>
+                <div class="cancel center">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="box center">
+           <img src="{{url_for('static', filename='images/council_images/faculty/Ashwini Sawant.jpeg')}}" alt="">
+            <div>
+                <p class="user_name">Ashwini Sawant</p>
+                <p class="skill">Faculty Incharge</p>
+            </div>
+            <div class="arr_container center">
+                <i class="fas fa-arrow-right"></i>
+            </div>
+            <div class="left_container off">
+                <div class="icons">
+                    <i class="fab fa-github"></i>
+                    <i class="fab fa-linkedin"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-facebook"></i>
+                </div>
+                <div class="cancel center">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="senior_name">
+        <h1>
+            <center>Senior Council</center>
+        </h1>
+
+    </div>
+
+    <div class="main center">
+        <div class="box center">
+           <img src="{{url_for('static', filename='images/council_images/SC/CEO_WIE_Vaishnavi_Shetty.jpeg')}}" alt="">
+            <div>
+                <p class="user_name">Vaishnavi Shetty</p>
+                <p class="skill">CEO AND WIE</p>
+            </div>
+            <div class="arr_container center">
+                <i class="fas fa-arrow-right"></i>
+            </div>
+            <div class="left_container off">
+                <div class="icons">
+                    <i class="fab fa-github"></i>
+                    <i class="fab fa-linkedin"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-facebook"></i>
+                </div>
+                <div class="cancel center">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+        </div>
+        <div class="box center">
+           <img src="{{url_for('static', filename='images/council_images/SC/SrTreasuer_Adwait_Shirodkar.jpg')}}" alt="">
+            <div>
+                <p class="user_name">Adwait Shirodkar</p>
+                <p class="skill">Sr Treasurer</p>
+            </div>
+            <div class="arr_container center">
+                <i class="fas fa-arrow-right"></i>
+            </div>
+            <div class="left_container off">
+                <div class="icons">
+                    <i class="fab fa-github"></i>
+                    <i class="fab fa-linkedin"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-facebook"></i>
+                </div>
+                <div class="cancel center">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+        </div>
+        <div class="box center">
+           <img src="{{url_for('static', filename='images/council_images/SC/SrEditor_Akshata_Deshpande.jpeg')}}" alt="">
+            <div>
+                <p class="user_name">Akshata Deshpande</p>
+                <p class="skill">Sr Editor</p>
+            </div>
+            <div class="arr_container center">
+                <i class="fas fa-arrow-right"></i>
+            </div>
+            <div class="left_container off">
+                <div class="icons">
+                    <i class="fab fa-github"></i>
+                    <i class="fab fa-linkedin"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-facebook"></i>
+                </div>
+                <div class="cancel center">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main center">
+        <div class="box center">
+           <img src="{{url_for('static', filename='images/council_images/SC/Chairperson_Vaibhavi_Jadhav.jpg')}}" alt="">
+            <div>
+                <p class="user_name">Vaibhavi Jadhav</p>
+                <p class="skill">Chairperson</p>
+            </div>
+            <div class="arr_container center">
+                <i class="fas fa-arrow-right"></i>
+            </div>
+            <div class="left_container off">
+                <div class="icons">
+                    <i class="fab fa-github"></i>
+                    <i class="fab fa-linkedin"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-facebook"></i>
+                </div>
+                <div class="cancel center">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main center">
+        <div class="box center">
+           <img src="{{url_for('static', filename='images/council_images/SC/SrWebEditor_Adarsh_Panigrahi.jpeg')}}" alt="">
+            <div>
+                <p class="user_name">Adarsh Panigrahi</p>
+                <p class="skill">Sr Web Editor</p>
+            </div>
+            <div class="arr_container center">
+                <i class="fas fa-arrow-right"></i>
+            </div>
+            <div class="left_container off">
+                <div class="icons">
+                    <i class="fab fa-github"></i>
+                    <i class="fab fa-linkedin"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-facebook"></i>
+                </div>
+                <div class="cancel center">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+        </div>
+        <div class="box center">
+           <img src="{{url_for('static', filename='images/council_images/SC/SrTab1_Sharvani_Swanat.jpg')}}" alt="">
+            <div>
+                <p class="user_name">Sharvani Swanat</p>
+                <p class="skill">Sr Tab 1</p>
+            </div>
+            <div class="arr_container center">
+                <i class="fas fa-arrow-right"></i>
+            </div>
+            <div class="left_container off">
+                <div class="icons">
+                    <i class="fab fa-github"></i>
+                    <i class="fab fa-linkedin"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-facebook"></i>
+                </div>
+                <div class="cancel center">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+        </div>
+        <div class="box center">
+           <img src="{{url_for('static', filename='images/council_images/SC/SrTab2_Simran_Huddedar.png')}}" alt="">
+            <div>
+                <p class="user_name">Simran Huddedar</p>
+                <p class="skill">Sr Tab 2</p>
+            </div>
+            <div class="arr_container center">
+                <i class="fas fa-arrow-right"></i>
+            </div>
+            <div class="left_container off">
+                <div class="icons">
+                    <i class="fab fa-github"></i>
+                    <i class="fab fa-linkedin"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-facebook"></i>
+                </div>
+                <div class="cancel center">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="Junior Council">
+            <h1>
+                <center>Junior Council</center>
+            </h1>
+        
+        </div>
+<!-- Grid 1 JR. Council -->
+<div class="main center">
+    <div class="box center">
+       <img src="{{url_for('static', filename='images/council_images/JC/Secretary_SherylBellary.jpeg')}}" alt="">
+        <div>
+            <p class="user_name">Sheryl Bellary</p>
+            <p class="skill">Secretary</p>
+        </div>
+        <div class="arr_container center">
+            <i class="fas fa-arrow-right"></i>
+        </div>
+        <div class="left_container off">
+            <div class="icons">
+                <i class="fab fa-github"></i>
+                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-facebook"></i>
+            </div>
+            <div class="cancel center">
+                <i class="fas fa-times"></i>
+            </div>
+        </div>
+    </div>
+    <div class="box center">
+       <img src="{{url_for('static', filename='images/council_images/JC/Aditi_Bombe_Management_EO.jpg')}}" alt="">
+        <div>
+            <p class="user_name">Aditi Bombe</p>
+            <p class="skill">Management EO</p>
+        </div>
+        <div class="arr_container center">
+            <i class="fas fa-arrow-right"></i>
+        </div>
+        <div class="left_container off">
+            <div class="icons">
+                <i class="fab fa-github"></i>
+                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-facebook"></i>
+            </div>
+            <div class="cancel center">
+                <i class="fas fa-times"></i>
+            </div>
+        </div>
+    </div>
+    <div class="box center">
+       <img src="{{url_for('static', filename='images/council_images/JC/Aditya Nehete_Graphics EO.jpeg')}}" alt="">
+        <div>
+            <p class="user_name">Aditya Nehete</p>
+            <p class="skill">Graphics EO</p>
+        </div>
+        <div class="arr_container center">
+            <i class="fas fa-arrow-right"></i>
+        </div>
+        <div class="left_container off">
+            <div class="icons">
+                <i class="fab fa-github"></i>
+                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-facebook"></i>
+            </div>
+            <div class="cancel center">
+                <i class="fas fa-times"></i>
+            </div>
+        </div>
+    </div>
+    <div class="box center">
+       <img src="{{url_for('static', filename='images/council_images/JC/Hitesh_Kapure_MPO Executive Officier.jpg')}}" alt="">
+        <div>
+            <p class="user_name">Hitesh Kapure</p>
+            <p class="skill">MPEO</p>
+        </div>
+        <div class="arr_container center">
+            <i class="fas fa-arrow-right"></i>
+        </div>
+        <div class="left_container off">
+            <div class="icons">
+                <i class="fab fa-github"></i>
+                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-facebook"></i>
+            </div>
+            <div class="cancel center">
+                <i class="fas fa-times"></i>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Grid 2 JR. Council -->
+<div class="main center">
+    <div class="box center">
+       <img src="{{url_for('static', filename='images/council_images/JC/KESAR JOTWANI_MPO EXECUTIVE OFFICER.jpg')}}" alt="">
+        <div>
+            <p class="user_name">Kesar Jotwani</p>
+            <p class="skill">MPEO</p>
+        </div>
+        <div class="arr_container center">
+            <i class="fas fa-arrow-right"></i>
+        </div>
+        <div class="left_container off">
+            <div class="icons">
+                <i class="fab fa-github"></i>
+                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-facebook"></i>
+            </div>
+            <div class="cancel center">
+                <i class="fas fa-times"></i>
+            </div>
+        </div>
+    </div>
+    <div class="box center">
+       <img src="{{url_for('static', filename='images/council_images/JC/Swapnil Sakpal_Jr. Treasurer.jpg')}}" alt="">
+        <div>
+            <p class="user_name">Swapnil Sapkal</p>
+            <p class="skill">Treasurer</p>
+        </div>
+        <div class="arr_container center">
+            <i class="fas fa-arrow-right"></i>
+        </div>
+        <div class="left_container off">
+            <div class="icons">
+                <i class="fab fa-github"></i>
+                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-facebook"></i>
+            </div>
+            <div class="cancel center">
+                <i class="fas fa-times"></i>
+            </div>
+        </div>
+    </div>
+    <div class="box center">
+       <img src="{{url_for('static', filename='images/council_images/JC/Kedar Gawhankar_Jr. Editor.jpeg')}}" alt="">
+        <div>
+            <p class="user_name">Kedar Gawhankar</p>
+            <p class="skill">Jr. Editor</p>
+        </div>
+        <div class="arr_container center">
+            <i class="fas fa-arrow-right"></i>
+        </div>
+        <div class="left_container off">
+            <div class="icons">
+                <i class="fab fa-github"></i>
+                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-facebook"></i>
+            </div>
+            <div class="cancel center">
+                <i class="fas fa-times"></i>
+            </div>
+        </div>
+    </div>
+    <div class="box center">
+      <div>
+       <img src="{{url_for('static', filename='images/council_images/JC/Jr. Editor_AtharvaKale.jpg')}}" alt="">
+            <p class="user_name">Atharva Kale</p>
+            <p class="skill">Jr. Editor</p>
+        </div>
+        <div class="arr_container center">
+            <i class="fas fa-arrow-right"></i>
+        </div>
+        <div class="left_container off">
+            <div class="icons">
+                <i class="fab fa-github"></i>
+                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-facebook"></i>
+            </div>
+            <div class="cancel center">            
+                <i class="fas fa-times"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Grid 3 JR. Council -->
+<div class="main center">
+    <div class="box center">
+       <img src="{{url_for('static', filename='images/council_images/JC/Vinit_Variyani_Jr_Editor.jpeg')}}" alt="">
+        <div>
+            <p class="user_name">Vinit Variyani</p>
+            <p class="skill">Jr. Editor</p>
+        </div>
+        <div class="arr_container center">
+            <i class="fas fa-arrow-right"></i>
+        </div>
+        <div class="left_container off">
+            <div class="icons">
+                <i class="fab fa-github"></i>
+                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-facebook"></i>
+            </div>
+            <div class="cancel center">
+                <i class="fas fa-times"></i>
+            </div>
+        </div>
+    </div>
+    <div class="box center">
+       <img src="{{url_for('static', filename='images/council_images/JC/Jr_Editor_Surabhi_Tambe.jpg')}}" alt="">
+        <div>
+            <p class="user_name">Surabhi Tambe</p>
+            <p class="skill">Jr. Editor</p>
+        </div>
+        <div class="arr_container center">
+            <i class="fas fa-arrow-right"></i>
+        </div>
+        <div class="left_container off">
+            <div class="icons">
+                <i class="fab fa-github"></i>
+                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-facebook"></i>
+            </div>
+            <div class="cancel center">
+                <i class="fas fa-times"></i>
+            </div>
+        </div>
+    </div>
+    <div class="box center">
+       <img src="{{url_for('static', filename='images/council_images/JC/Mayuri Yerande_Jr Web Editor.jpeg')}}" alt="">
+        <div>
+            <p class="user_name">Mayuri Yerande</p>
+            <p class="skill">Jr. Web Editor</p>
+        </div>
+        <div class="arr_container center">
+            <i class="fas fa-arrow-right"></i>
+        </div>
+        <div class="left_container off">
+
+            <div class="icons">
+                <i class="fab fa-github"></i>
+                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-facebook"></i>
+            </div>
+            <div class="cancel center">
+                <i class="fas fa-times"></i>
+            </div>
+        </div>
+    </div>
+    <div class="box center">
+       <img src="{{url_for('static', filename='images/council_images/JC/Jr. Web Editor_Tanay Phatak.jpg')}}" alt="">
+        <div>
+            <p class="user_name">Tanay Pathak</p>
+            <p class="skill">Jr. Web Editor</p>
+        </div>
+        <div class="arr_container center">
+            <i class="fas fa-arrow-right"></i>
+        </div>
+        <div class="left_container off">
+            <!-- <p>Skills</p>
+            <div class="skills">
+                <div>HTML</div>
+                <div>CSS</div>
+                <div>Flask</div>
+                <div>Node Js</div>
+            </div> -->
+            <div class="icons">
+                <i class="fab fa-github"></i>
+                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-facebook"></i>
+            </div>
+            <div class="cancel center">
+                <i class="fas fa-times"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Grid 4 JR. Council -->
+<div class="main center"> 
+    <div class="box center">
+       <img src="{{url_for('static', filename='images/council_images/JC/Varun Motiyani _Jr Web Editor_.jpg')}}" alt="">
+        <div>
+            <p class="user_name">Varun Motiyani</p>
+            <p class="skill">Jr. Web Editor</p>
+        </div>
+        <div class="arr_container center">
+            <i class="fas fa-arrow-right"></i>
+        </div>
+        <div class="left_container off">
+            <!-- <p>Skills</p>
+            <div class="skills">
+                <div>HTML</div>
+                <div>CSS</div>
+                <div>Flask</div>
+                <div>Node Js</div>
+            </div> -->
+            <div class="icons">
+                <i class="fab fa-github"></i>
+                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-facebook"></i>
+            </div>
+            <div class="cancel center">
+                <i class="fas fa-times"></i>
+            </div>
+        </div>
+    </div>
+    <div class="box center">
+       <img src="{{url_for('static', filename='images/council_images/JC/Aaman Bhowmick_Jr Editor.jpg')}}" alt="">
+        <div>
+            <p class="user_name">Aaman Bhowmick</p>
+            <p class="skill">Jr. Web Editor</p>
+        </div>
+        <div class="arr_container center">
+            <i class="fas fa-arrow-right"></i>
+        </div>
+        <div class="left_container off">
+            <div class="icons">
+                <i class="fab fa-github"></i>
+                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-facebook"></i>
+            </div>
+            <div class="cancel center">
+                <i class="fas fa-times"></i>
+            </div>
+        </div>
+    </div>
+    <div class="box center">
+       <img src="{{url_for('static', filename='images/council_images/JC/Jr. TAB_Atharva_Nayak.jpg')}}" alt="">
+        <div>
+            <p class="user_name">Atharva Nayak</p>
+            <p class="skill">Jr. Tab</p>
+        </div>
+        <div class="arr_container center">
+            <i class="fas fa-arrow-right"></i>
+        </div>
+        <div class="left_container off">
+            <div class="icons">
+                <i class="fab fa-github"></i>
+                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-facebook"></i>
+            </div>
+            <div class="cancel center">
+                <i class="fas fa-times"></i>
+            </div>
+        </div>
+    </div>
+    <div class="box center">
+       <img src="{{url_for('static', filename='images/council_images/JC/Jr TAB_Ayush.jpg')}}" alt="">
+        <div>
+            <p class="user_name">Ayush Kotkar</p>
+            <p class="skill">Jr. Tab</p>
+        </div>
+        <div class="arr_container center">
+            <i class="fas fa-arrow-right"></i>
+        </div>
+        <div class="left_container off">
+            <div class="icons">
+                <i class="fab fa-github"></i>
+                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-facebook"></i>
+            </div>
+            <div class="cancel center">
+                <i class="fas fa-times"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Grid 6 JR. Council -->
+<div class="main center">   
+    <div class="box center">
+       <img src="{{url_for('static', filename='images/council_images/JC/Jr. TAB_Omkar Mourya.jpg')}}" alt="">
+        <div>
+            <p class="user_name">Omkar Mourya</p>
+            <p class="skill">Jr. Tab</p>
+        </div>
+        <div class="arr_container center">
+            <i class="fas fa-arrow-right"></i>
+        </div>
+        <div class="left_container off">
+            <div class="icons">
+                <i class="fab fa-github"></i>
+                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-facebook"></i>
+            </div>
+            <div class="cancel center">
+                <i class="fas fa-times"></i>
+            </div>
+        </div>
+    </div>
+    <div class="box center">
+       <img src="{{url_for('static', filename='images/council_images/JC/Soumya Chauhan_Jr. TAB.jpg')}}" alt="">
+        <div>
+            <p class="user_name">Soumya Chauhan</p>
+            <p class="skill">Jr. Tab</p>
+        </div>
+        <div class="arr_container center">
+            <i class="fas fa-arrow-right"></i>
+        </div>
+        <div class="left_container off">
+            <div class="icons">
+                <i class="fab fa-github"></i>
+                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-facebook"></i>
+            </div>
+            <div class="cancel center">
+                <i class="fas fa-times"></i>
+            </div>
+        </div>
+    </div>
+    <div class="box center">
+       <img src="{{url_for('static', filename='images/council_images/JC/Jr TAB_Ashutosh Deorukhkar.jpeg')}}" alt="">
+        <div>
+            <p class="user_name">Ashutosh Deorukhkar</p>
+            <p class="skill">Jr. Tab</p>
+        </div>
+        <div class="arr_container center">
+            <i class="fas fa-arrow-right"></i>
+        </div>
+        <div class="left_container off">
+            <div class="icons">
+                <i class="fab fa-github"></i>
+                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-facebook"></i>
+            </div>
+            <div class="cancel center">
+                <i class="fas fa-times"></i>
+            </div>
+        </div>
+    </div> 
+    <div class="box center">
+       <img src="{{url_for('static', filename='images/council_images/JC/Vaishnavi Amritwar_WIE.jpg')}}" alt="">
+        <div>
+            <p class="user_name">Vaishnavi Amritwar</p>
+            <p class="skill">WIE</p>
+        </div>
+        <div class="arr_container center">
+            <i class="fas fa-arrow-right"></i>
+        </div>
+        <div class="left_container off">
+            <div class="icons">
+                <i class="fab fa-github"></i>
+                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-facebook"></i>
+            </div>
+            <div class="cancel center">
+                <i class="fas fa-times"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Grid 7 JR. Council -->
+<div class="main center">
+    <div class="box center">
+       <img src="{{url_for('static', filename='images/council_images/JC/WIE_Riya Gorade.jpg')}}" alt="">
+        <div>
+            <p class="user_name">Riya Gorade</p>
+            <p class="skill">WIE</p>
+        </div>
+        <div class="arr_container center">
+            <i class="fas fa-arrow-right"></i>
+        </div>
+        <div class="left_container off">
+            <div class="icons">
+                <i class="fab fa-github"></i>
+                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-facebook"></i>
+            </div>
+            <div class="cancel center">
+                <i class="fas fa-times"></i>
+            </div>
+        </div>
+    </div>
+    <div class="box center">
+       <img src="{{url_for('static', filename='images/council_images/JC/AditiMiniyar1_volunteer.jpg')}}" alt="" loading="lazy">
+        <div>
+            <p class="user_name">Aditi Miniyar</p>
+            <p class="skill">Volunteer</p>
+        </div>
+        <div class="arr_container center">
+            <i class="fas fa-arrow-right"></i>
+        </div>
+        <div class="left_container off">
+            <!-- <p>Skills</p>
+            <div class="skills">
+                <div>HTML</div>
+                <div>CSS</div>
+                <div>Flask</div>
+                <div>Node Js</div>
+            </div> -->
+            <div class="icons">
+                <i class="fab fa-github"></i>
+                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-facebook"></i>
+            </div>
+            <div class="cancel center">
+                <i class="fas fa-times"></i>
+            </div>
+        </div>
+    </div>
+    <div class="box center">
+       <img src="{{url_for('static', filename='images/council_images/JC/Ghanishtha Talele_Volunteer.jpeg')}}" alt="" loading="lazy">
+        <div>
+            <p class="user_name">Ghanishtha Talele</p>
+            <p class="skill">Volunteer</p>
+        </div>
+        <div class="arr_container center">
+            <i class="fas fa-arrow-right"></i>
+        </div>
+        <div class="left_container off">
+            <div class="icons">
+                <i class="fab fa-github"></i>
+                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-facebook"></i>
+            </div>
+            <div class="cancel center">
+                <i class="fas fa-times"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Grid 8 JR. Council -->
+<div class="main center">
+    <div class="box center">
+       <img src="{{url_for('static', filename='images/council_images/JC/Kimaya Nehete.jpg')}}" alt="" loading="lazy">
+        <div>
+            <p class="user_name">Kimaya Nehete</p>
+            <p class="skill">Volunteer</p>
+        </div>
+        <div class="arr_container center">
+            <i class="fas fa-arrow-right"></i>
+        </div>
+        <div class="left_container off">
+            <div class="icons">
+                <i class="fab fa-github"></i>
+                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-facebook"></i>
+            </div>
+            <div class="cancel center">
+                <i class="fas fa-times"></i>
+            </div>
+        </div>
+    </div>
+    <div class="box center">
+       <img src="{{url_for('static', filename='images/council_images/JC/icon.png')}}" alt="" loading="lazy">
+        <div>
+            <p class="user_name">Sahil Parab </p>
+            <p class="skill">Volunteer</p>
+        </div>
+        <div class="arr_container center">
+            <i class="fas fa-arrow-right"></i>
+        </div>
+        <div class="left_container off">
+            <div class="icons">
+                <i class="fab fa-github"></i>
+                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-facebook"></i>
+            </div>
+            <div class="cancel center">
+                <i class="fas fa-times"></i>
+            </div>
+        </div>
+    </div>
+    <div class="box center">
+
+      <img src="{{url_for('static', filename='images/council_images/JC/Atharva_Gaonkar_Vol.jpeg')}}" alt="" loading="lazy">
+        <div>
+            <p class="user_name">Atharva Goankar</p>
+            <p class="skill">Volunteer</p>
+        </div>
+        <div class="arr_container center">
+            <i class="fas fa-arrow-right"></i>
+        </div>
+        <div class="left_container off">
+            <div class="icons">
+                <i class="fab fa-github"></i>
+                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-facebook"></i>
+            </div>
+            <div class="cancel center">
+                <i class="fas fa-times"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+<script type="text/javascript" src="{{url_for('static', filename='js/council.js')}}"></script>
+
 {% endblock %}
