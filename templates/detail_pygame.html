@@ -1,0 +1,124 @@
+{% extends "layout.html" %}
+
+{% block title %}Pygame | IEEE-VESIT{% endblock %}
+{% block css %}
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/details.css')}}">
+{% endblock %}
+
+{% block content %}
+<!-- <script type="text/javascript" src="{{url_for('static', filename='js/details.js')}}"></script> -->
+  <div class="container">
+    <div class="top-img">
+        <img src="{{url_for('static', filename='images/Events/Details/pygame1.png')}}" alt="">
+    </div>
+    <div class="row">
+        <div class="text-top">
+            <h1>Pygame Workshop</h1>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa tempora atque minus voluptatibus voluptatem. Cum ea corrupti praesentium ipsam quis! Laborum adipisci ipsam numquam esse autem maxime id recusandae modi, ullam molestias dignissimos veritatis quos provident cumque, necessitatibus perferendis voluptatum. Odio blanditiis molestias voluptas vel dicta quas ea velit adipisci?
+            </p>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa tempora atque minus voluptatibus voluptatem. Cum ea corrupti praesentium ipsam quis! Laborum adipisci ipsam numquam esse autem maxime id recusandae modi, ullam molestias dignissimos veritatis quos provident cumque, necessitatibus perferendis voluptatum. Odio blanditiis molestias voluptas vel dicta quas ea velit adipisci?
+            </p>
+        </div>
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 4</div>
+              <img src="{{url_for('static', filename='images/Events/Details/pygame2.png')}}" >
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 4</div>
+              <img src="{{url_for('static', filename='images/Events/Details/pygame2.png')}}" >
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 4</div>
+              <img src="{{url_for('static', filename='images/Events/Details/pygame2.png')}}" >
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 4</div>
+                <img src="{{url_for('static', filename='images/Events/Details/pygame2.png')}}" >
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+            
+            </div>
+            <br>
+    </div>
+    <div class="row">
+        <div class="text-top">
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa tempora atque minus voluptatibus voluptatem. Cum ea corrupti praesentium ipsam quis! Laborum adipisci ipsam numquam esse autem maxime id recusandae modi, ullam molestias dignissimos veritatis quos provident cumque, necessitatibus perferendis voluptatum. Odio blanditiis molestias voluptas vel dicta quas ea velit adipisci?
+            </p>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa tempora atque minus voluptatibus voluptatem. Cum ea corrupti praesentium ipsam quis! Laborum adipisci ipsam numquam esse autem maxime id recusandae modi, ullam molestias dignissimos veritatis quos provident cumque, necessitatibus perferendis voluptatum. Odio blanditiis molestias voluptas vel dicta quas ea velit adipisci?
+            </p>
+            <div class="sub-row">
+                <div class="col-2">
+                    <h3>Speakers</h3>
+                    <li>
+                        <i class="fa-solid fa-bullhorn"></i>
+                        Aditi Bombe
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-bullhorn"></i>
+                        Sheryl Bellary
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-bullhorn"></i>
+                        Aaman Bhowmick
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-bullhorn"></i>
+                        Mayuri Yerande
+                    </li>
+                    <h3 id="record">Recorded Videos</h3>
+                    <li>Day 1: <a href="#">Tap here</a> </li>
+                    <li>Day 2: <a href="#">Tap here</a> </li>
+                </div>
+                <div class="col-2">
+                    <h3>Important Links</h3>
+                    <li>Github Link: <a href="#">Tap here</a> </li>
+                    <li>Drive Link: <a href="#">Tap here</a> </li>
+                    <li>Document Links: <a href="#">Tap here</a> </li>
+                    <li>Instagram Links: <a href="#">Tap here</a> </li>
+                    <li>Download Certificates: <a href="#">Tap here</a> </li>
+                </div>
+            </div>
+        </div>
+        <video src="{{url_for('static', filename='images/Events/Details/pygame.mp4')}}" controls loading="lazy"></video>
+    </div>
+  </div>
+  <script>
+    let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+  </script>
+{% endblock %}

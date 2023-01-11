@@ -31,5 +31,13 @@ def contact():
 def footer():
     return render_template('footer.html')
 
+@app.route("/details/pygame")
+def pygame():
+    return render_template('detail_pygame.html')
+
+@app.route("/workshops")
+def workshops():
+    return render_template('workshop.html')
+
 if __name__ == '__main__':  
    app.run(debug = True)  
