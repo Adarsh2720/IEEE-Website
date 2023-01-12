@@ -9,7 +9,7 @@
 :root{
 	--bg-color: #222327;
 	--text-color: #fff;
-	--main-color: #29fd53;
+	--main-color: green;
 }
 .nav{
 	height:10vh;
@@ -55,7 +55,7 @@ header{
 	transition: all .50s ease;
 }
 .navbar a:hover{
-	color: var(--main-color);
+	color: black;
 }
 .navbar a.active{
 	color: var(--main-color);
@@ -132,11 +132,13 @@ header{
  text-transform: uppercase;
  text-decoration: none;
  font-family: Arial, Helvetica;
- font-size: 14px;
+ font-size: 15.5px;
+ font-weight: bold;
 }  
 
 .menu li:hover {
- background: #e74c3c;
+ background:#f8a633;
+ 
 }  
 
 .menu > li > a {
