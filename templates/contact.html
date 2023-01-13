@@ -11,128 +11,137 @@
 
 {% block content %}
 
-<script src="https://kit.fontawesome.com/d0c5f1e210.js" crossorigin="anonymous"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-</script>
-<script type="text/javascript">
-     (function () {
-          emailjs.init("SvMFuXjnt51S2g6nI");
-     })();
-</script>
 
-<center>
-     <h1><b>Contact Us</b></h1>
-     <hr style="width: 120px; height: 3px; background-color: #000; border: 0px; border-radius: 2px;">
-</center>
+     <script src="https://kit.fontawesome.com/d0c5f1e210.js" crossorigin="anonymous"></script>
+     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+     </script>
+     <script type="text/javascript">
+          (function () {
+               emailjs.init("SvMFuXjnt51S2g6nI");
+          })();
+     </script>
 
-     <div class="cards center">
-          <div class="card">
-               <img src="{{url_for('static', filename='images/contact_us_images/Vaibhavi1.jpeg')}}" class="card__image" alt="" />
-               <div class="card__overlay">
-                    <div class="card__header">
-                         <!-- <svg class="card__arc" xmlns="ghttp://www.w3.org/2000/sv">
-                              <path />
-                         </svg> -->
-                         <img class="card__thumb" src="{{url_for('static', filename='images/contact_us_images/Vaibhavi2.jpeg')}}"
-                              alt="" />
-                         <div class="card__header-text">
-                              <h3 class="card__title">Vaibhavi Jadhav</h3>
-                              <span class="card__status">Chairperson</span>
-                         </div>
-                    </div>
-                    <p class="card__description">
-                         <i class="fa-solid fa-phone"></i>&nbsp &nbsp 9082717571 <br>
-                         <i class="fa-solid fa-envelope" style="margin-top: 10px;"></i>&nbsp &nbsp
-                         2019vaibhavi.jadhav@ves.ac.in
-                    </p>
-               </div>
-          </div>
-          <div class="card">
-               <img src="{{url_for('static', filename='images/contact_us_images/Sheryl1.jpeg')}}" class="card__image" alt="" />
-               <div class="card__overlay">
-                    <div class="card__header">
-                         <!-- <svg class="card__arc" xmlns="ghttp://www.w3.org/2000/sv">
-                              <path />
-                         </svg> -->
-                         <img class="card__thumb" src="{{url_for('static', filename='images/contact_us_images/Sheryl2.jpeg')}}" alt="" />
-                         <div class="card__header-text">
-                              <h3 class="card__title">Sheryl Bellary</h3>
-                              <span class="card__status">Secretary</span>
-                         </div>
-                    </div>
-                    <p class="card__description">
-                         <i class="fa-solid fa-phone"></i>&nbsp &nbsp 9869679027 <br>
-                         <i class="fa-solid fa-envelope" style="margin-top: 10px;"></i>&nbsp &nbsp
-                         2020.sheryl.bellary@ves.ac.in
-                    </p>
-               </div>
-          </div>
-          <div class="card center">
-               <img src="{{url_for('static', filename='images/contact_us_images/Hitesh1.jpeg')}}" class="card__image" alt="" />
-               <div class="card__overlay">
-                    <div class="card__header">
-                         <!-- <svg class="card__arc" xmlns="ghttp://www.w3.org/2000/sv">
-                              <path />
-                         </svg> -->
-                         <img class="card__thumb" src="{{url_for('static', filename='images/contact_us_images/Hitesh2.jpeg')}}" alt="" />
-                         <div class="card__header-text">
-                              <h3 class="card__title">Hitesh Kapure</h3>
-                              <span class="card__status">MPO</span>
-                         </div>
-                    </div>
-                    <p class="card__description">
-                         <i class="fa-solid fa-phone"></i>&nbsp &nbsp 9156841360 <br>
-                         <i class="fa-solid fa-envelope" style="margin-top: 10px;"></i>&nbsp &nbsp
-                         2020.hitesh.kapure@ves.ac.in
-                    </p>
-               </div>
-          </div>
-          <div class="card">
-               <img src="{{url_for('static', filename='images/contact_us_images/Kesar1.jpeg')}}" class="card__image" alt="" />
-               <div class="card__overlay">
-                    <div class="card__header">
-                         <!-- <svg class="card__arc" xmlns="ghttp://www.w3.org/2000/sv">
-                              <path />
-                         </svg> -->
-                         <img class="card__thumb" src="{{url_for('static', filename='images/contact_us_images/Kesar2.jpeg')}}" alt="" />
-                         <div class="card__header-text">
-                              <h3 class="card__title">Kesar Jotwani</h3>
-                              <span class="card__status">MPO</span>
-                         </div>
-                    </div>
-                    <p class="card__description">
-                         <i class="fa-solid fa-phone"></i>&nbsp &nbsp 9518926351 <br>
-                         <i class="fa-solid fa-envelope" style="margin-top: 10px;"></i>&nbsp &nbsp
-                         2020.kesar.jotwani@ves.ac.in
-                    </p>
-               </div>
-          </div>
 
+     <div>
+          <center>
+               <h1><b>Contact Us</b></h1>
+               <hr style="width: 120px; height: 3px; background-color: #000; border: 0px; border-radius: 2px;">
+          </center>
+
+          <div class="cards center">
+               <div class="card">
+                    <img src="{{url_for('static', filename='images/contact_us_images/Vaibhavi1.jpeg')}}" class="card__image" alt="" />
+                    <div class="card__overlay">
+                         <div class="card__header">
+                              <!-- <svg class="card__arc" xmlns="ghttp://www.w3.org/2000/sv">
+                                   <path />
+                              </svg> -->
+                              <img class="card__thumb" src="{{url_for('static', filename='images/contact_us_images/Vaibhavi2.jpeg')}}"
+                                   alt="" />
+                              <div class="card__header-text">
+                                   <h3 class="card__title">Vaibhavi Jadhav</h3>
+                                   <span class="card__status">Chairperson</span>
+                              </div>
+                         </div>
+                         <p class="card__description">
+                              <i class="fa-solid fa-phone"></i>&nbsp &nbsp 9082717571 <br>
+                              <i class="fa-solid fa-envelope" style="margin-top: 10px;"></i>&nbsp &nbsp
+                              2019vaibhavi.jadhav@ves.ac.in
+                         </p>
+                    </div>
+               </div>
+               <div class="card">
+                    <img src="{{url_for('static', filename='images/contact_us_images/Sheryl1.jpeg')}}" class="card__image" alt="" />
+                    <div class="card__overlay">
+                         <div class="card__header">
+                              <!-- <svg class="card__arc" xmlns="ghttp://www.w3.org/2000/sv">
+                                   <path />
+                              </svg> -->
+                              <img class="card__thumb" src="{{url_for('static', filename='images/contact_us_images/Sheryl2.jpeg')}}" alt="" />
+                              <div class="card__header-text">
+                                   <h3 class="card__title">Sheryl Bellary</h3>
+                                   <span class="card__status">Secretary</span>
+                              </div>
+                         </div>
+                         <p class="card__description">
+                              <i class="fa-solid fa-phone"></i>&nbsp &nbsp 9869679027 <br>
+                              <i class="fa-solid fa-envelope" style="margin-top: 10px;"></i>&nbsp &nbsp
+                              2020.sheryl.bellary@ves.ac.in
+                         </p>
+                    </div>
+               </div>
+               <div class="card center">
+                    <img src="{{url_for('static', filename='images/contact_us_images/Hitesh1.jpeg')}}" class="card__image" alt="" />
+                    <div class="card__overlay">
+                         <div class="card__header">
+                              <!-- <svg class="card__arc" xmlns="ghttp://www.w3.org/2000/sv">
+                                   <path />
+                              </svg> -->
+                              <img class="card__thumb" src="{{url_for('static', filename='images/contact_us_images/Hitesh2.jpeg')}}" alt="" />
+                              <div class="card__header-text">
+                                   <h3 class="card__title">Hitesh Kapure</h3>
+                                   <span class="card__status">MPO</span>
+                              </div>
+                         </div>
+                         <p class="card__description">
+                              <i class="fa-solid fa-phone"></i>&nbsp &nbsp 9156841360 <br>
+                              <i class="fa-solid fa-envelope" style="margin-top: 10px;"></i>&nbsp &nbsp
+                              2020.hitesh.kapure@ves.ac.in
+                         </p>
+                    </div>
+               </div>
+               <div class="card">
+                    <img src="{{url_for('static', filename='images/contact_us_images/Kesar1.jpeg')}}" class="card__image" alt="" />
+                    <div class="card__overlay">
+                         <div class="card__header">
+                              <!-- <svg class="card__arc" xmlns="ghttp://www.w3.org/2000/sv">
+                                   <path />
+                              </svg> -->
+                              <img class="card__thumb" src="{{url_for('static', filename='images/contact_us_images/Kesar2.jpeg')}}" alt="" />
+                              <div class="card__header-text">
+                                   <h3 class="card__title">Kesar Jotwani</h3>
+                                   <span class="card__status">MPO</span>
+                              </div>
+                         </div>
+                         <p class="card__description">
+                              <i class="fa-solid fa-phone"></i>&nbsp &nbsp 9518926351 <br>
+                              <i class="fa-solid fa-envelope" style="margin-top: 10px;"></i>&nbsp &nbsp
+                              2020.kesar.jotwani@ves.ac.in
+                         </p>
+                    </div>
+               </div>
+     
+          </div>
      </div>
-<center>
-     <h2><b>Or</b></h2>
-     <h1><b>Email Us</b></h1>
-     <hr style="width: 120px; height: 3px; background-color: #000; border: 0px;  border-radius: 2px;">
-</center>
-<div class="contact-in">
-     <div class="contact-map">
-          <iframe
-               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15085.675987384604!2d72.88022558518108!3d19.045306994697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c8add9569a29%3A0xb7ad04bf9a389df7!2sVivekanand%20Education%20Society&#39;s%20Institute%20Of%20Technology%20(VESIT)!5e0!3m2!1sen!2sin!4v1672162695749!5m2!1sen!2sin"
-               width="100%" height="auto" style="border:0;" allowfullscreen="" loading="lazy"
-               referrerpolicy="no-referrer-when-downgrade"></iframe>
-     </div>
-     <div class="contact-form">
-          <h1>Send Message</h1>
-          <form>
-               <input type="text" placeholder="Name" class="contact-form-txt" name="name" id="name">
-               <input type="text" placeholder="Contact No." class="contact-form-txt" name="contact"
-                    id="contact">
-               <input type="email" placeholder="Email" class="contact-form-txt" name="email" id="email">
-               <textarea placeholder="Message" class="contact-form-textarea" name="message" id="message"></textarea>
-               <input type="submit" placeholder="Submit" class="contact-form-btn" onclick="sendMail()">
-          </form>
+
+
+<div data-aos="fade-up" style="margin-top:50px;">
+     <center>
+          <h2><b>OR</b></h2>
+          <h1><b>Email Us</b></h1>
+          <hr style="width: 120px; height: 3px; background-color: #000; border: 0px;  border-radius: 2px;">
+     </center>
+     <div class="contact-in">
+          <div class="contact-map">
+               <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15085.675987384604!2d72.88022558518108!3d19.045306994697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c8add9569a29%3A0xb7ad04bf9a389df7!2sVivekanand%20Education%20Society&#39;s%20Institute%20Of%20Technology%20(VESIT)!5e0!3m2!1sen!2sin!4v1672162695749!5m2!1sen!2sin"
+                    width="100%" height="auto" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="contact-form">
+               <h1>Send Message</h1>
+               <form>
+                    <input type="text" placeholder="Name" class="contact-form-txt" name="name" id="name">
+                    <input type="text" placeholder="Contact No." class="contact-form-txt" name="contact"
+                         id="contact">
+                    <input type="email" placeholder="Email" class="contact-form-txt" name="email" id="email">
+                    <textarea placeholder="Message" class="contact-form-textarea" name="message" id="message"></textarea>
+                    <input type="submit" placeholder="Submit" class="contact-form-btn" onclick="sendMail()">
+               </form>
+          </div>
      </div>
 </div>
+
 
 <script>
      function sendMail() {
