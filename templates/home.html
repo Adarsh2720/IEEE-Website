@@ -5,9 +5,92 @@
 
 {% block css %}
      <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/style.css')}}">
+     <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/home.css')}}">
 {% endblock %}
 
 
 {% block content %}
-  <h1>Home</h1>
+  
+  	
+	<div class="center">
+
+		<div class="img-slider">
+			<div class="slide active">
+			  <img src="{{url_for('static', filename='images/home_image/A1.jpg')}}" alt="">
+			  <div class="info">
+				<h2>Event 1</h2>
+			  </div>
+			</div>
+			<div class="slide">
+			  <img src="{{url_for('static', filename='images/home_image/A2.jpg')}}" alt="">
+			  <div class="info">
+				<h2>Event 2</h2>
+			  </div>
+			</div>
+			<div class="slide">
+			  <img src="{{url_for('static', filename='images/home_image/A3.jpg')}}" alt="">
+			  <div class="info">
+				<h2>Event 3</h2>
+			  </div>
+			</div>
+			<div class="slide">
+			  <img src="{{url_for('static', filename='images/home_image/A4.jpg')}}" alt="">
+			  <div class="info">
+				<h2>Event 4</h2>
+			  </div>
+			</div>
+			<div class="slide">
+			  <img src="{{url_for('static', filename='images/home_image/A5.jpg')}}" alt="">
+			  <div class="info">
+				<h2>Event 5</h2>
+			  </div>
+			</div>
+			<div class="navigation">
+			  <div class="btn active"></div>
+			  <div class="btn"></div>
+			  <div class="btn"></div>
+			  <div class="btn"></div>
+			  <div class="btn"></div>
+			</div>
+		  </div>
+	</div>
+
+
+
+	<h1 class="center" style="font-size:45px">About us</h1>
+	<div class="main">
+		<div class="card">
+			<h3 class="head1">IEEE</h3>
+			<p class="para"> The
+				<strong>Institute of Electrical and Electronics Engineers (IEEE)</strong>
+				is a professional association for electronic and electrical engineering.
+				It was formed in 1963 withthe amalgamation
+				of the American Institute of Electrical Engineers and the Institute
+				of Radio Engineers.Its objectives are the educational and technical
+				advancement of electrical and electronic engineering,
+				telecommunications, computer engineering and allied
+				disciplines.</span>
+			</p>
+		</div>
+		<div class="card">
+			<h3 class="head1">IEEE-VESIT</h3>
+			<p class="para">
+				<strong>IEEE-VESIT</strong> is the student branch of the IEEE Mumbai section, having
+				over 1000 student members. Sailing through smoothly as ever, our
+				motto "Excellence through Innovation" keeps the mast high as we
+				transform students into technically sound professionals by
+				conducting quality workshops, competitions and events for our
+				members every year.
+			</p>
+		</div>
+	</div>
+
+	<h1 class="center" style="font-size:45px; margin:0 20px;">Up-Comming Events</h1>
+	<div class="events center" >
+		<img src="{{url_for('static', filename='images/home_image/current_event.png')}}" alt="">
+	</div>
+
+	<script type="text/javascript" src="{{url_for('static', filename='js/home_script.js')}}"></script>
+
+
 {% endblock %}
