@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 
-{% block title %}Events | IEEE-VESIT{% endblock %}
+{% block title %}Workshops | IEEE-VESIT{% endblock %}
 {% block css %}
 <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/events.css')}}">
 {% endblock %}
@@ -11,7 +11,7 @@
   <div class="container1">
     <div class="card">
       <div class="imgBx">
-        <img src="{{url_for('static', filename='images/Events/tableau.png')}}">
+        <img src="{{url_for('static', filename='images/workshops/tableau.png')}}">
       </div>
       <div class="contentBx">
         <h2>Tableau</h2>
@@ -24,27 +24,11 @@
       </div>
     </div>
   </div>
+ 
   <div class="container1">
     <div class="card">
       <div class="imgBx">
-        <img src="{{url_for('static', filename='images/Events/arcade.png')}}">
-      </div>
-      <div class="contentBx">
-        <h2>IEEE Arcade</h2>
-        <div class="size">
-          <h3>Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
-        </div>
-        <div class="color">
-          
-        </div>
-        <a href="#">Details</a>
-      </div>
-    </div>
-  </div>
-  <div class="container1">
-    <div class="card">
-      <div class="imgBx">
-        <img src="{{url_for('static', filename='images/Events/pygame.png')}}">
+        <img src="{{url_for('static', filename='images/workshops/pygame.png')}}">
       </div>
       <div class="contentBx">
         <h2>PyGame</h2>
@@ -60,10 +44,27 @@
   <div class="container1">
     <div class="card">
       <div class="imgBx">
-        <img src="{{url_for('static', filename='images/Events/pygame.png')}}">
+        <img src="{{url_for('static', filename='images/workshops/UIUX.png')}}">
       </div>
       <div class="contentBx">
-        <h2>Lorem, ipsum.</h2>
+        <h2>UI/UX</h2>
+        <div class="size">
+          <h3>Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
+        </div>
+        <div class="color">
+          
+        </div>
+        <a href="#">Details</a>
+      </div>
+    </div>
+  </div>
+  <div class="container1">
+    <div class="card">
+      <div class="imgBx">
+        <img src="{{url_for('static', filename='images/workshops/middleware.png')}}">
+      </div>
+      <div class="contentBx">
+        <h2>E-bulletin Via Middleware</h2>
         <div class="size">
           <h3>Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
         </div>
@@ -75,5 +76,54 @@
   </div>
 </div>
 </div>
+
+
+
+
+
+
+
+
+
+<div class="row">
+  <div class="main-container">
+    <div class="container1">
+      <div class="card">
+        <div class="imgBx">
+          <img src="{{url_for('static', filename='images/workshops/cybersecurity.png')}}">
+        </div>
+        <div class="contentBx">
+          <h2>Cyber Security</h2>
+          <div class="size">
+            <h3>Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
+          </div>
+          <div class="color">
+          </div>
+          <a href="#">Details</a>
+        </div>
+      </div>
+    </div>
+   
+    <div class="container1">
+      <div class="card">
+        <div class="imgBx">
+          <img src="{{url_for('static', filename='images/workshops/blockchain.png')}}">
+        </div>
+        <div class="contentBx">
+          <h2>BlockChain</h2>
+          <div class="size">
+            <h3>Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
+          </div>
+          <div class="color">
+          </div>
+          <a href="#">Details</a>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+  </div>
+  
 
 {% endblock %}

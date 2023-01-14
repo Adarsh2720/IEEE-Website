@@ -39,5 +39,9 @@ def pygame():
 def workshops():
     return render_template('workshop.html')
 
+@app.route("/magazines")
+def magazine():
+    return render_template('magazine.html')
+
 if __name__ == '__main__':  
    app.run(debug = True)  
