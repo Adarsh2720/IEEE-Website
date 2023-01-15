@@ -1,32 +1,38 @@
-
 {% extends "layout.html" %}
 
 {% block title %}IEEE-VESIT{% endblock %}
 
 {% block css %}
-     <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/style.css')}}">
-     <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/home.css')}}">
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/style.css')}}">
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/home.css')}}">
 {% endblock %}
 
 
 {% block content %}
-  
-  	
+
+
 <div class="center" data-aos="zoom-in">
 	<div class="slideshow-container">
 		<!-- Full-width images with number and caption text -->
 		<div class="mySlides fade">
-		<img src="{{url_for('static', filename='images/home_image/A1.jpg')}}" style="width:100%">
+			<img src="{{url_for('static', filename='images/home_image/A1.jpeg')}}" style="width:100%">
 		</div>
-	
+
 		<div class="mySlides fade">
-		<img src="{{url_for('static', filename='images/home_image/A2.jpg')}}" style="width:100%">
+			<img src="{{url_for('static', filename='images/home_image/A2.jpg')}}" style="width:100%">
 		</div>
-	
+
 		<div class="mySlides fade">
-		<img src="{{url_for('static', filename='images/home_image/A3.jpg')}}" style="width:100%">
+			<img src="{{url_for('static', filename='images/home_image/A3.jpg')}}" style="width:100%">
 		</div>
-	
+
+		<div class="mySlides fade">
+			<img src="{{url_for('static', filename='images/home_image/A4.png')}}" style="width:100%">
+		</div>
+
+		<div class="centered">
+			<img src="{{url_for('static', filename='images/home_image/IEEEVESIT.png')}}" alt="">
+		</div>
 		<!-- Next and previous buttons -->
 		<!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 		<a class="next" onclick="plusSlides(1)">&#10095;</a> -->
@@ -44,7 +50,7 @@
 		<center>
 			<h1><b>ABOUT US</b></h1>
 			<hr>
-	   </center>
+		</center>
 		<div class="main">
 			<div class="card">
 				<h3 class="head1">IEEE</h3>
@@ -75,99 +81,98 @@
 
 	</div>
 
-<!-- What we do    -->
-<div class="reviewers" >
-	<center data-aos="zoom-in-up">
-		<h1 ><b>WHAT WE DO?</b></h1>
+	<!-- What we do    -->
+	<center>
+		<h1><b>WHAT WE DO?</b></h1>
 		<hr>
 	</center>
-    <div class="small-container" style="margin-top:1.5em;" data-aos="zoom-in">
-        <div class="row">
-            <div class="col-3">
-                <i class="fa fa-quote-left"></i>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
-            <div class="col-3">
-                <i class="fa fa-quote-left"></i>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
-        </div>
-		<div class="row">
-            <div class="col-3">
-                <i class="fa fa-quote-left"></i>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+	<div class="reviewers">
+		<div class="small-container">
+			<div class="row">
+				<div class="col-3">
+					<p>IEEE stands for Institute of Electrical and Electronic Engineers. As our motto suggests: Excellence Through Innovation, we at IEEE not only include professional, technical workshops and fun events but also Technical Paper Presentation (TPP).</p>
+				</div>
+				<div class="col-3">
+					<p>At IEEE, you will find the perfect balance between Studies and Fun as you get an equal opportunity to attend  insightful workshops and also amazing fun events. An ALL-IN-ONE society that trains you in such a way that you face the real world without any hassle.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-3">
+					<p> IEEE is the only society that provides Technical Paper Presentation (TPP) where you learn about the entire process of writing and publishing Research Papers which give you an edge for further studies as well as jobs. The faculty as well as the student council helps you </p>
+				</div>
+				<div class="col-3">
+					<p>IEEE Women in Engineering (WIE) is one of the largest international professional organizations dedicated to promoting women engineers and scientists and inspiring girls around the world to follow their academic interests to a career in engineering.</p>
+				</div>
+			</div>
+		</div>
+	</div>
 
-            </div>
-            <div class="col-3">
-                <i class="fa fa-quote-left"></i>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<div>
-
-</div>
-<center data-aos="zoom-in">
-	<h1><b>UP-COMMING EVENTS</b></h1>
-	<hr>
-</center>
+	<center>
+		<!-- <h1 style="font-size:45px;"><b>UP-COMMING EVENTS</b></h1>   style="width: 200px; height: 3px; background-color: #000; border: 0px; border-radius: 2px;" -->
+		<h1><b>UPCOMING EVENTS</b></h1>
+		<hr>
+	</center>
 	<div data-aos="fade-up">
-		<div class="events center" >
+
+
+		<div class="events center">
 			<img src="{{url_for('static', filename='images/home_image/current_event.png')}}" alt="">
 		</div>
 	</div>
-<!--  testimonial    -->
-	<center data-aos="zoom-in-up">
+	<!--  testimonial    -->
+	<center>
 		<h1><b>TESTIMONIALS</b></h1>
 		<hr>
 	</center>
-	<div class="reviewers" data-aos="fade-up">
-    	<div class="small-container">
+	<div class="reviewers">
+		<div class="small-container">
 			<div class="row-rev">
 				<div class="row">
 					<div id="row-rev-1">
-					<div class="col-3" ">
-						<i class="fa fa-quote-left"></i>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						<div class="col-3" ">
+                		<i class=" fa fa-quote-left"></i>
+							<p>Being a member of IEEE Vesit was amazing I have gained experience with the technical workshop conducted by the council. Also the International membership of IEEE have helped me in publishing my research paper</p>
 
-						<img src="https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cg_face%2Cq_auto:good%2Cw_300/MTc5ODc1NTM4NjMyOTc2Mzcz/gettyimages-693134468.jpg">
-						<h3>Tom Cruise</h3>
+							<img
+								src="{{url_for('static', filename='images/home_image/juhi_rev.jpeg')}}">
+							<h3>Juhi Chhatlani</h3>
+						</div>
+						<div class="col-3">
+							<i class="fa fa-quote-left"></i>
+							<p>IEEE has no doubt been an important factor in my growth. Since all the workshop conducted had gave me insights and hands on experience into various technology that help me to learn new things. I am very grateful to IEEE-VESIT to help me in my growth</p>
+
+							<img
+								src="{{url_for('static', filename='images/home_image/mansi_rev.jpeg')}}">
+							<h3>Mansi Kasar</h3>
+						</div>
 					</div>
-					<div class="col-3">
-						<i class="fa fa-quote-left"></i>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-				
-						<img src="https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cg_face%2Cq_auto:good%2Cw_300/MTgxMjQ5NDUyMjMxNjk3NzY4/gettyimages-492532708-copy.jpg">
-						<h3>Vin Diesel</h3>
-					</div>
-				</div>
-				<div id="row-rev-1">
-					<div class="col-3">
-						<i class="fa fa-quote-left"></i>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-						
-						<img src="https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cg_face%2Cq_auto:good%2Cw_300/MTIwNjA4NjM0MDYyNTM4MjUy/johnny-depp-9542522-1-402.jpg">
-						<h3>Johnny Depp</h3>
-					</div>
-					<div class="col-3">
-						<i class="fa fa-quote-left"></i>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-						
-						<img src="https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cg_face%2Cq_auto:good%2Cw_300/MTIwNjA4NjM0MDYyNTM4MjUy/johnny-depp-9542522-1-402.jpg">
-						<h3>Johnny Depp</h3>
+					<div id="row-rev-1">
+						<div class="col-3">
+							<i class="fa fa-quote-left"></i>
+							<p>UI/UX and App devlopement workshop that was conducted by IEEE has helped me to know more about these feilds.Also all the council members helped me if any doubt arises during workshops.</p>
+
+							<img
+								src="{{url_for('static', filename='images/home_image/vansh_rev.jpeg')}}">
+							<h3>Vansh Pahuja</h3>
+						</div>
+						<div class="col-3">
+							<i class="fa fa-quote-left"></i>
+							<p>I have been a part of the IEEE-VESIT family for 3 years and I am not exaggerating one bit when I say that choosing to get into this council was the best decision at the time. The workshops are conducted by the council after intensive research and in-house trials, so that the participants can have the best experience.</p>
+
+							<img
+								src="{{url_for('static', filename='images/home_image/madhumita_rev.jpeg')}}">
+							<h3>Madhumita Menon</h3>
+						</div>
 					</div>
 				</div>
 			</div>
-        </div>
-    </div>
-</div>
+		</div>
+	</div>
 </div>
 
-		<script type="text/javascript" src="{{url_for('static', filename='js/home_script.js')}}"></script>
+
+<script type="text/javascript" src="{{url_for('static', filename='js/home_script.js')}}"></script>
+</div>
 
 
 {% endblock %}

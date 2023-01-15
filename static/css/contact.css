@@ -9,7 +9,7 @@ body {
     height: 100vh;
     display: grid;
     align-items: center;
-    background: linear-gradient(to right,  rgba(255,209,67,1) 0%, rgba(255,145,83,1) 90%);
+    background: #000;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -35,11 +35,11 @@ body {
     display: block;
     width: 90%;
     height: 100%;
-    border-radius: calc(var(--curve) * 1px);
+    border-radius: 20px;
     overflow: hidden;
     text-decoration: none;
     cursor: pointer;
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+    box-shadow: 8px 8px 10px -6px #ff2a6d;
 }
 
 .card__image {
@@ -53,7 +53,7 @@ body {
     left: 0;
     right: 0;
     z-index: 1;
-    border-radius: calc(var(--curve) * 1px);
+    border-radius: 40px 0 0 0;
     background-color: var(--surface-color);
     transform: translateY(100%);
     transition: .2s ease-in-out;
@@ -69,7 +69,7 @@ body {
     align-items: center;
     gap: 2em;
     padding: 2em;
-    border-radius: calc(var(--curve) * 1px) 0 0 0;
+    border-radius: 40px 0 0 0;
     background-color: var(--surface-color);
     transform: translateY(-100%);
     transition: .2s ease-in-out;
@@ -103,7 +103,7 @@ body {
 .card__title {
     font-size: 0.9em;
     margin: 0 0 .3em;
-    color: #ffb347;
+    color: #05d9e8;
 }
 
 .card__tagline {
@@ -111,7 +111,7 @@ body {
     margin: 1em 0;
     font-family: "MockFlowFont";
     font-size: .8em;
-    color: #D7BDCA;
+    color: #d1f7ff;
 }
 
 .card__status {
@@ -122,7 +122,7 @@ body {
 .card__description {
     padding: 0 2em 2em;
     margin: 0;
-    color: #D7BDCA;
+    color: #d1f7ff;
     font-family: "MockFlowFont";
     font-size: 0.9em;
     display: -webkit-box;
@@ -145,7 +145,7 @@ body {
     padding: 10px;
     border-radius: 10px;
     background: #fff;
-    box-shadow: 0px 0px 10px 0px #666;
+    box-shadow: 8px 8px 10px -6px #ff2a6d;
 }
 
 .contact-map {
@@ -208,7 +208,7 @@ body {
     outline: none;
     border-radius: 50px;
     background: #000;
-    color: #fff;
+    color: #d1f7ff;
     text-transform: uppercase;
     padding: 10px;
     cursor: pointer;
@@ -230,4 +230,17 @@ input[type=number] {
 .contact-form-btn:hover {
     background-color: #000;
     transition: 1s;
+}
+
+hr {
+    width: 12em;
+    height: 0.2em;
+    background-color: #05d9e8;
+    border: 0px;
+    border-radius: 0.1em;
+}
+
+h1{
+    color: #05d9e8;
+    text-shadow: 0.07em 0.07em #005678;
 }
