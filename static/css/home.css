@@ -249,17 +249,20 @@ height: auto;
 }
 }
 
-
+.reviewers{
+  margin-top:2em ;
+}
 
 
 
 .reviewers .col-3{
+  background-color: #222327;
   text-align: center;
   padding: 40px 20px;
-  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 20px rgba(252, 250, 250, 0.288);
   cursor: pointer;
   transition: transform 0.5s;
-  margin: auto 0.5em 0 0.5em;
+  margin: auto 0.7em 0 0.7em;
 }
 .reviewers .col-3 img{
   width: 50px;
@@ -277,7 +280,7 @@ height: auto;
 .reviewers .col-3 p{
   font-size: 12px;
   margin: 12px 0;
-  color: #777;
+  color: rgba(255, 255, 255, 0.795);
 }
 .reviewers .col-3 h3{
   font-weight: 600;
